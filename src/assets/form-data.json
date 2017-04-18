@@ -1,0 +1,40 @@
+[
+      {
+        "key": "documentId",
+        "label": "Document Id",
+        "value": "999",
+        "limit": 5,
+        "required": true,
+        "order": 4,
+        "type": "text"
+      },
+      {
+        "key": "responseCode",
+        "label": "Response Code",
+        "order": 2,
+        "type": "text",
+        "value": "test"
+      },
+      {
+        "key": "Email",
+        "label": "Email",
+        "order": 3,
+        "type": "text",
+        "value": "test@email.com"
+      },
+    
+      { 
+        "key": "city",
+        "label": "City",
+        "value": "good",
+        "options":[
+          {"key": "solid","value": "Solid"},
+          {"key": "great","value": "Great"},
+          {"key": "good","value": "Good"},
+          {"key": "unproven","value": "Unproven"},
+          {"key": "brave", "value": "Brave"}
+          ],
+        "order": 1,
+        "type": "dropdown"
+      }
+]

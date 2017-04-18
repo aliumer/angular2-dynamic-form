@@ -1,0 +1,11 @@
+<div class="form-group" [formGroup]="form">
+  <div class="control-group">
+    <label class="control-lable" [attr.for]="field.key">{{field.label}}</label> {{field.type}}
+    <div *ngIf="field.type" [ngSwitch]="field.type">
+      <input *ngSwitchCase="'text'" [formControlName]="field.key" class="form-control" [id]="field.key" [type]="field.type" [value]="field.value">
+      <select [id]="field.key" *ngSwitchCase="'dropdown'" [formControlName]="field.key" class="form-control">
+        <option *ngFor="let opt of field.options" [value]="opt.key" [selected]="opt.key==field.value">{{opt.value}}</option>
+    </select>
+    </div>
+  </div>
+</div>
